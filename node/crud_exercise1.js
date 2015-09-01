@@ -7,8 +7,8 @@ var connection = require('./connection');
 // Instantiating the Couchbase cluster object using the node we configured
 var cluster = new couchbase.Cluster(connection.node);
 
-// Opening a connection to the Auction bucket
-var bucket = cluster.openBucket('Auction', function(err) {
+// Opening a connection to the travel-sample bucket
+var bucket = cluster.openBucket('travel-sample', function(err) {
   if(err) {
     // Failed to connect to cluster
     throw err;
