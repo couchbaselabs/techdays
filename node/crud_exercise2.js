@@ -30,7 +30,7 @@ var bucket = cluster.openBucket('travel-sample', function(err) {
     console.log("Retrieved doc:", JSON.stringify(doc));
 
     // Change the bid amount to 50
-    doc.amount = "50";
+    doc.amount = 50;
 
     console.log("Changed doc:", JSON.stringify(doc));
 
